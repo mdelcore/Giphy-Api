@@ -28,7 +28,7 @@ window.onclick = function(event) {
 
 
 //Dumps JSON content for each button into verb-gif div
-function displayVerbGifs() {
+function displayCharGifs() {
 	temp = $(this).data("name");
 	
 	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + temp + "&api_key=9BgYMH5YPahyY0e2DxUDZ5lhFW9qmorX";
@@ -46,9 +46,9 @@ function displayVerbGifs() {
             var gifDiv = $("<div class='item'>");
             var rating = results[i].rating;
             var p = $("<p class='rating'>").text("RATED: " + rating);
-            var verbGif = $("<img class='gif'>");
+            var charGif = $("<img class='gif'>");
             //building source from results pulled from giphy
-           	$(verbGif).attr({
+           	$(charGif).attr({
            		src: results[i].images.fixed_height_still.url,
            		"data-behavior": "still",
               "data-animated": results[i].images.fixed_height.url,
@@ -58,7 +58,7 @@ function displayVerbGifs() {
 
             //add gif and paragraph before other gifs (image is first because it is later in the code)
             gifDiv.append(p);
-            gifDiv.append(verbGif);
+            gifDiv.append(charGif);
             $("#gifs-view").append(gifDiv);
         }
 	});
@@ -120,7 +120,7 @@ function renderButtons() {
 
 
 //when clicking on verb button, runs displayVerbGifs function to print on page
-$(document).on("click", ".character", displayVerbGifs);
+$(document).on("click", ".character", displayCharGifs);
 
 //calling renderButtons to display initial buttons
 renderButtons();

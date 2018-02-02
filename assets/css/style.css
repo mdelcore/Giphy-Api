@@ -14,6 +14,7 @@ header {
 	background-repeat: no-repeat;
 	height: 210px;
 	width: 210px;
+	border: 3px solid pink;
 }
 
 h1 {
@@ -28,7 +29,7 @@ button {
 	padding: 10px;
 	margin-left: 10px;
 	border: none;
-	border: 3px solid #444;
+	border: 3px solid pink;
 }
 
 button:hover {
@@ -46,7 +47,7 @@ form {
 	padding: 10px;
 	margin-top: 10px;
 	border: none;
-	border: 3px solid #333;
+	border: 3px solid pink;
 }
 
 #add-character:hover {
@@ -124,5 +125,5 @@ form {
 
 #gifs-view {
 	margin-left: 20%;
-	/*margin-right: 10%;*/
+	/*margin-right: 15%;*/
 }
