@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GIF verbs</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="center">
+<header>
+<h1>Mean Girls</h1>
+</header>
+</div>
+
+<!-- character buttons listed here -->
+<div id="buttons-list"></div>
+
+
+<form id="input-form">
+	<label id="label" for="character-input">Add a quote or character</label><br>
+    <input type="text" id="character-input"><br>
+
+    <!-- Button to generate new character button -->
+    <input id="add-character" type="submit" value="GO">
+</form>
+<!-- <img id="help" src="assets/images/help2.svg" title="help" width="25" height="25"> -->
+<p id="help">help</p>
+
+<!-- Help -->
+<div id="myHelp" class="help">
+
+  <!-- Help content -->
+  <div class="help-content">
+    <span class="close">&times;</span>
+    <div id="tips">
+	<p>
+	Click on the character you want to see gifs of.  
+	<br>
+	You can create new character or quote buttons by adding a name or quote in the input box and clicking 'GO'.  
+	<br>
+	Click gifs to play and pause</p>
+	</div>
+  </div>
+
+</div>
+
+<div id="gifs-view"></div>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+<script src="assets/javascript/app.js"></script>
+</html>

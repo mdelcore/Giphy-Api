@@ -1,0 +1,128 @@
+body {
+	text-align: center;
+}
+
+#center {
+	margin: auto;
+	width: 15%;
+
+}
+
+header {
+	background-image: url(../images/giphy.gif);
+	background-size: 211px 168px;
+	background-repeat: no-repeat;
+	height: 210px;
+	width: 210px;
+}
+
+h1 {
+	font-family: arial;
+	padding-top: 100px;
+	color: white;
+}
+
+button {
+	background-color: #000;
+	color: white;
+	padding: 10px;
+	margin-left: 10px;
+	border: none;
+	border: 3px solid #444;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+form {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+#add-character{
+	background-color: #000;
+	color: white;
+	padding: 10px;
+	margin-top: 10px;
+	border: none;
+	border: 3px solid #333;
+}
+
+#add-character:hover {
+	cursor: pointer;
+}
+
+#help {
+	font-size: 12px;
+	color: #191970;
+}
+
+#help:hover {
+	cursor: pointer;
+	font-weight: bold;
+
+}
+
+.help {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.help-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#label {
+	font-size: 10px;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}
+
+.rating {
+	font-size: 10px;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	margin: 0px;
+	padding: 0px;
+	font-weight: bolder;
+}
+
+
+.item {
+	float: left;
+	margin: 10px;
+}
+
+#gifs-view {
+	margin-left: 20%;
+	/*margin-right: 10%;*/
+}
